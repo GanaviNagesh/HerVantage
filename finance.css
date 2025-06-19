@@ -1,0 +1,222 @@
+
+body{
+    margin:0px;
+    padding:0px;
+}
+.bo{
+    background-color: #ffffff;
+    
+}
+h2{
+    display: flex;
+    justify-content: center;
+}
+.financial-literacy {
+    background-color: #f07096;
+    padding: 4rem 1rem;
+    color: #ffeeee;
+}
+.contain{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3);
+    gap: 2rem;
+}
+
+
+.financial-literacy-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.financial-literacy h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #5a4e3c;
+}
+
+.financial-literacy p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.financial-literacy-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.financial-literacy-box {
+    background: #f7a2a2;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.financial-literacy-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.financial-literacy-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.financial-literacy-box p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Resource Boxes Section */
+.resource-box {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fffbfb;
+    transition: background-color 0.5s ease; /* Smooth transition for background color */
+}
+
+.resource-box:hover {
+    background-color: #f7a2a2; 
+    box-shadow: 4px -3px black;/* Change background color on hover */
+}
+
+.resource-image {
+    margin-right: 15px;
+}
+
+
+.resource-content {
+    flex: 1;
+}
+
+.resource-content h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.resource-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.learn-more {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.class-card:hover{
+    transform: scale(1.01);
+    background-color: #dce8f5;
+    box-shadow: 10px 10px rgb(196, 189, 189);
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+}
+.img1{
+    width: 200px;
+    height: 150px;
+}
+.img2{
+width: 0px;
+height: 150px;
+}
+.img3{
+width: 150px;
+height: 150px;
+}
+.img4{
+width: 150px;
+height: 150px;
+}
+.img5{
+width: 150px;
+height: 150px;
+}
+.img6{
+width: 150px;
+height: 150px;
+}
+.img7{
+width: 150px;
+height: 150px;
+}
+.live-classes-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.class-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.class-info h2 {
+    margin: 0 0 10px;
+    color: #007bff;
+}
+
+.class-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.countdown-timer {
+    text-align: center;
+}
+
+.countdown-timer p {
+    margin: 0 0 5px;
+    color: #555;
+}
+
+#timer {
+    font-size: 1.5em;
+    color: #ff0000;
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}

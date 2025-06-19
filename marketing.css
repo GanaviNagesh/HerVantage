@@ -1,0 +1,107 @@
+/* General container for the videos */
+h2,h1,p{
+    display: flex;
+    justify-content: center;
+}
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Space between videos */
+    padding: 20px;
+}
+body{
+    background-color: #f8eeee;
+}
+/* Styling each video thumbnail */
+.video-thumbnail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+.link{
+    display: flex;
+    justify-content: center;
+}
+.link a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+/* Styling the iframe inside the video thumbnail */
+.video-thumbnail iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 8px;
+    
+}
+.video-thumbnail:hover{
+    background-color: #f8eeee;
+} 
+
+/* Styling the text below the video */
+.video-thumbnail div {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Styling the video title */
+.video-thumbnail div p {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Video 1 specific styling */
+.video-thumbnail1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.video-thumbnail1 .video1 p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.desc1 iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 8px;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .video-container {
+        grid-template-columns: repeat(1, 1fr); /* Stack videos on small screens */
+    }
+
+    .video-thumbnail iframe {
+        width: 100%;
+    }
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}

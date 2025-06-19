@@ -1,0 +1,335 @@
+/* General Styles */
+/* body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+} */
+ /* General reset for padding and margin */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Space between nav-buttons and auth-buttons */
+    align-items: center; /* Align items vertically */
+    padding: 0 20px; /* Add horizontal padding for spacing */
+    height:10%; /* Ensure container takes full height */
+}
+.nav-buttons {
+    display: flex;
+    flex-direction: row;  /* Change from column to row */
+    gap: 20px;  /* Adjust space between the buttons */
+}
+
+.auth-buttons {
+    display: flex;
+    flex-direction: row; /* Align buttons horizontally */
+    gap: 20px; /* Space between Login and Register buttons */
+}
+.auth-buttons button{
+    background-color: rgb(88, 88, 121);
+    color: white;
+    font-weight: 100px;
+}
+.auth-buttons button:hover{
+    background-color: white;
+    color: black;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    /* Gradient from bottom to top */
+    color: rgb(10, 10, 10);
+    border: none;
+    border-radius: 80px;
+    width: 150px; /* Set width for consistency */
+    background-color: none;
+}
+button:hover{
+    transition-timing-function: ease-in;
+    background-color: #4CAF50;
+}
+
+.success{
+    display: flex;
+    flex-direction: row;
+    padding-left: 300px;
+}
+
+/* Success Stories Section */
+.success-stories {
+    width: 300px; /* Initial width */
+    height: 300px; /* Initial height */
+    padding: 20px;
+    margin: 20px;
+    background-color: #f3b1b1; /* Green background for visibility */
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden; /* Prevents overflow of content */
+    opacity: 0.8; /* Slightly visible initially */
+    animation-duration: 5s; /* Initial animation duration is 0 (no animation) */
+    animation-name: none; /* No animation by default */
+    animation-timing-function: ease; /* Default timing function */
+    animation-delay: 0s; /* No delay */
+    animation-iteration-count: 1; /* Run the animation only once */
+}
+
+/* Styling for the content inside */
+
+.success-stories p {
+    font-size: 14px;
+    line-height: 1.5;
+    transition: font-size 0.3s ease; /* Smooth text size transition */
+    color: black;
+}
+.success-stories img:hover {
+    animation-name: imgband; /* Apply the expandBox animation */
+    animation-duration: 0.5s; /* Duration of the animation */
+    animation-timing-function: ease-out; /* Easing effect for smoothness */
+    animation-delay: 0s; /* No delay before starting animation */
+    animation-iteration-count: 1; /* Animation runs once */
+    animation-fill-mode: forwards; /* Keeps the final state of the animation after it finishes */
+}
+
+/* Keyframes for expanding the box */
+@keyframes expandBox {
+    0% {
+        width: 300px;
+        height: 300px;
+        
+        
+    }
+    100% {
+        width: 300px;
+        height: 500px;
+        opacity: 1; /* Fully visible */
+    }
+}
+
+/* Hover effect for Success Stories - Trigger the animation */
+.success-stories:hover {
+    animation-name: expandBox; /* Apply the expandBox animation */
+    animation-duration: 1.5s; /* Duration of the animation */
+    animation-timing-function: ease-out; /* Easing effect for smoothness */
+    animation-delay: 0s; /* No delay before starting animation */
+    animation-iteration-count: 1; /* Animation runs once */
+    animation-fill-mode: forwards; /* Keeps the final state of the animation after it finishes */
+}
+
+/* Hover effect for text inside */
+.success-stories:hover h2 {
+    font-size: 24px; /* Increase font size on hover */
+}
+
+.success-stories:hover p {
+    font-size: 16px; /* Increase font size on hover */
+}
+
+
+
+
+/* Features Section */
+.features {
+    background: #eed3d3;
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+h2 {
+    padding: 0px;
+    color: #000000;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 15px auto;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    
+    color: #725937;
+}
+.feature-box {
+    background: #f3b1b1;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature-box img {
+    max-width: 80%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* About Us Section */
+.about-us {
+    background: #f3e9dd;
+    padding: 3rem 1rem;
+}
+
+.about-us-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-us-image {
+    flex: 1 1 40%;
+    text-align: center;
+}
+
+.about-us-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-image:hover {
+    transform: scale(1.01);
+}
+
+.about-us-content {
+    flex: 1 1 50%;
+}
+
+.about-us-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #5a4e3c;
+}
+
+.about-us-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    background: linear-gradient(135deg, #f76c6c, #ff9d76);
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.newsletter-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.newsletter-content h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.newsletter-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    max-width: 350px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-form button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background: #fff;
+    color: #f0aaaa;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    transform: scale(1.1);
+    background: #f76c6c;
+    color: white;
+}
+
+/* Animation for Newsletter Section */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}

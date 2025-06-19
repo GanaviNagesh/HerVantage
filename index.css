@@ -1,0 +1,82 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('/hackthon/3women1.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+
+.hero-section .overlay {
+    /* background: rgba(232, 219, 219, 0.6); */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+h1 {
+    color: rgb(248, 245, 245);
+    font-family: 'Times New Roman', Times, serif;
+}
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #29022d;
+}
+a:hover {
+    color: #6f4518;
+}
+.hero-content .btn {
+    padding: 0.8rem 2rem;
+    background: #f76c6c;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content .btn:hover {
+    background: #ff4c4c;
+}
+
+/* Features Section */
+.features {
+    background: #c07373;
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #333;
+}
+ h2{
+    color:#f3722c ;
+}

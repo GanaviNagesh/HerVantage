@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Business Ideas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='business_styles.css') }}">
+</head>
+<body>
+    <div class="results-container">
+        <h1>Recommended Business Ideas</h1>
+        <ul>
+            {% for idea in ideas %}
+                <li>{{ idea }}</li>
+            {% endfor %}
+        </ul>
+        <a href="/">Back to Search</a>
+    </div>
+</body>
+</html>
